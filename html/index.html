@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVITATION</title>
+    <!-- reset.css modern-css-reset -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/slick.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <div class="index">
+        <div class="slideshow" id="slick">
+            <div class="slideshow_img"><img src="../img/IMG_0984.jpg" alt=""></div>
+            <div class="slideshow_img"><img src="../img/IMG_0986.jpg" alt=""></div>
+            <div class="slideshow_img"><img src="../img/IMG_1047.jpg" alt=""></div>
+        </div>
+        <ul class="nav">
+            <li class="nav_message">
+                <a href="#message">MESSAGE<span>ご挨拶</span></a>
+            </li>
+            <li class="nav_events">
+                <a href="#events">EVENTS<span>日時・会場</span></a>
+            </li>
+            <li class="nav_rsvp">
+                <a href="#rsvp">RSVP<span>ご出欠</span></a>
+            </li>
+        </ul>
+        <div class="inroduction">
+            <div class="inroduction_inner container">
+                <div class="message">
+                    <h2>MESSAGE</h2>
+                    <p>
+                        向春の候　皆様いかがお過ごしでしょうか
+                        <br>このたび　結婚式を執り行うこととなりました
+                        <br>日頃お世話になっております皆様に
+                        <br>私どもの門出をお見守りいただきたく
+                        <br>ささやかながら小宴を催したく存じます
+                        <br>ご多用中　誠に恐縮ではございますが
+                        <br>ぜひご出席いただきたく　ご案内申し上げます
+                    </p>
+                </div>
+                <div class="profile">
+                    <div class="profiile_inner">
+                        <ul class="groom">
+                            <li class="profiile_photo"><img src="" alt="新郎_写真" srcset=""></li>
+                            <li class="name"><h3>増田 祥実</h3></li>
+                        </ul>
+                        <div class="and">
+                            <span>AND</span>
+                        </div>
+                        <ul class="bride">
+                            <li class="profiile_photo"><img src="../img/IMG_0964.jpg" alt="新婦_写真" srcset=""></li>
+                            <li class="name"><h3>林 温子</h3></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="events">
+            <div class="events_inner container">
+                <h2>EVENTS</h2>
+            </div>
+        </div>
+        <div class="rsvp">
+            <div class="rsvp_inner container">
+                <div class="rsvp_bg">
+                    <div class="rsvp_content">
+                        <h2>RSVP</h2>
+                        <div class="rsvp_form_input">
+                            <p class="rsvp_text">お手数ではございますが　出席情報のご登録をお願い申し上げます</p>
+                            <form method="POST" action="https://dear-guest.com/api/g/32135/guest/add" accept-charset="UTF-8" id="guest-edit" class="form_area h-adr" onsubmit="return false;" autocomplete="off">
+                                <input name="_token" type="hidden" value="9vjJ2Eis7fovZb4X8BVA4TLxC09epfT5mDm6RZXp">
+                                <input name="invitation_id" type="hidden" value="32135">
+                                <input name="add_guest_cnt" type="hidden" value="1">
+                                <input name="del_com_guest" type="hidden" value="">
+                                <input name="com_field_0" type="hidden" value="0">
+                                <input name="guest_id" type="hidden">
+                                <span class="p-country-name" style="display:none;">Japan</span>
+                                <span class="all_attention"></span>
+                                <div class="first_form">
+                                    <div class="first_form_content">
+                                        <div class="rsvp_form">
+                                            <ul class="responsive cf">
+                                                <li class="attendance">
+                                                    <input class="responsive_label" type="radio" name="com_0_0" value="1" id="attendance" checked="">
+                                                    <label class="label" for="attendance">出席<span class="en_attend_decline">attend</span></label>
+                                                </li>
+                                                <li class="absence">
+                                                    <input class="responsive_label" type="radio" name="com_0_0" value="2" id="absence">
+                                                    <label class="label" for="absence">欠席<span class="en_attend_decline">decline</span></label>
+                                                </li>
+                                                <span class="attention" id="e_com_0_0"></span>
+                                            </ul>
+                                            <div class="self_info">
+                                                <p class="attention_title">*は必須項目です</p>
+                                                                <dl class="cf">
+                                                    <dt class="required">
+                                                        <p>名前</p><span class="read_title">Name</span>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <input class="input_half" type="text" name="com_0_419876" placeholder="姓" value="">
+                                                        <input class="input_half" type="text" name="com_0_419877" placeholder="名" value="">
+                                                    </dd>
+                                                    <span class="attention" id="e_com_0_419876"></span>
+                                                    <span class="attention" id="e_com_0_419877"></span>
+                                                </dl>
+                                                                                <dl class="cf">
+                                                    <dt class="">
+                                                        <p>かな</p><span class="read_title">Kana</span>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                        <input class="input_half" type="text" name="com_0_419878" placeholder="せい" value="">
+                                                        <input class="input_half" type="text" name="com_0_419879" placeholder="めい" value="">
+                                                    </dd>
+                                                    <span class="attention" id="e_com_0_419878"></span>
+                                                    <span class="attention" id="e_com_0_419879"></span>
+                                                </dl>
+                                                                                <dl class="cf">
+                                                    <dt class="">
+                                                        <p>〒</p><span class="read_title">Postcode</span>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                                                    <input class="input p-postal-code" type="text" name="com_0_419882" placeholder="0000000" value="">
+                                                                                </dd>
+                                                    <span class="attention" id="e_com_0_419882"></span>
+                                                </dl>
+                                                                    <dl class="cf">
+                                                    <dt class="">
+                                                        <p>住所</p><span class="read_title">Address</span>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                                                    <input class="input p-region p-locality p-street-address p-extended-address" type="text" name="com_0_419883" placeholder="住所" value="">
+                                                                                </dd>
+                                                    <span class="attention" id="e_com_0_419883"></span>
+                                                </dl>
+                                                                    <dl class="cf">
+                                                    <dt class="">
+                                                        <p>建物名</p><span class="read_title">Building</span>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                                                    <input class="input" type="text" name="com_0_419884" placeholder="建物名・部屋番号" value="">
+                                                                                </dd>
+                                                    <span class="attention" id="e_com_0_419884"></span>
+                                                </dl>
+                                                                    <dl class="cf">
+                                                    <dt class="">
+                                                        <p>電話番号</p><span class="read_title">Phone number</span>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                                                    <input class="input" type="text" name="com_0_419885" placeholder="電話番号" value="">
+                                                                                </dd>
+                                                    <span class="attention" id="e_com_0_419885"></span>
+                                                </dl>
+                                                                    <dl class="cf">
+                                                    <dt class="required">
+                                                        <p>メールアドレス</p><span class="read_title">Email Address</span>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                                                    <input class="input" type="text" name="com_0_419886" placeholder="メールアドレス" value="">
+                                                                                </dd>
+                                                    <span class="attention" id="e_com_0_419886"></span>
+                                                </dl>
+                                                                    <dl class="cf">
+                                                    <dt class="">
+                                                        <p>アレルギー</p><span class="read_title">Allergy</span>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                                                    <input class="input" type="text" name="com_0_419887" placeholder="アレルギー" value="">
+                                                                                </dd>
+                                                    <span class="attention" id="e_com_0_419887"></span>
+                                                </dl>
+                                                                    <dl class="cf">
+                                                    <dt class="">
+                                                        <p>メッセージ</p><span class="read_title">Message</span>
+                                                    </dt>
+                                                    <dd class="cf">
+                                                                    <textarea name="com_0_419888" rows="3" placeholder="メッセージ"></textarea>
+                                                                </dd>
+                                                    <span class="attention" id="e_com_0_419888"></span>
+                                                </dl>
+                                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add_form_content">
+                                    <span id="add_com_0"></span>
+                                </div>
+                                <div class="rsvp_footer">
+                                    <button class="submit_btn" id="submit_btn" type="button" name="submit" placeholder="送信">送信</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
